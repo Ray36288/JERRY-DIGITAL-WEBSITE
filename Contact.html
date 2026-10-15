@@ -1,0 +1,1739 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Contact Jerry Digital Printers for professional printing, DTF printing, stationery, online applications, airport pickup and digital services."
+    >
+
+    <meta
+        name="keywords"
+        content="Jerry Digital Printers, contact, digital printing, DTF printing, printing Uganda, stationery, online applications"
+    >
+
+    <meta
+        name="author"
+        content="Jerry Digital Printers"
+    >
+
+    <title>Contact | Jerry Digital Printers</title>
+
+
+    <!-- GOOGLE FONT -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <style>
+
+        /* =====================================================
+           ROOT VARIABLES
+        ===================================================== */
+
+        :root {
+
+            --orange: #ff7a00;
+            --orange-dark: #e66d00;
+
+            --black: #111111;
+            --dark-black: #0b0b0b;
+
+            --white: #ffffff;
+
+            --light-background: #f7f7f7;
+
+            --text: #222222;
+            --gray: #666666;
+            --light-gray: #aaaaaa;
+
+            --border: #dddddd;
+
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+
+        body {
+
+            font-family:
+                "Inter",
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background-color: var(--light-background);
+
+            color: var(--text);
+
+            line-height: 1.6;
+
+        }
+
+
+        a {
+
+            text-decoration: none;
+
+        }
+
+
+        /* =====================================================
+           NAVIGATION
+        ===================================================== */
+
+        header {
+
+            width: 100%;
+
+            background-color: var(--black);
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            box-shadow:
+                0 2px 10px rgba(0, 0, 0, 0.15);
+
+        }
+
+
+        .navbar {
+
+            max-width: 1200px;
+
+            min-height: 75px;
+
+            margin: auto;
+
+            padding: 0 25px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+        }
+
+
+        /* =====================================================
+           LOGO
+        ===================================================== */
+
+        .logo {
+
+            color: white;
+
+            font-size: 24px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.5px;
+
+        }
+
+
+        .logo span {
+
+            color: var(--orange);
+
+        }
+
+
+        /* =====================================================
+           NAVIGATION LINKS
+        ===================================================== */
+
+        .nav-links {
+
+            list-style: none;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 30px;
+
+        }
+
+
+        .nav-links a {
+
+            color: white;
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            transition: color 0.3s ease;
+
+        }
+
+
+        .nav-links a:hover {
+
+            color: var(--orange);
+
+        }
+
+
+        .nav-links .active {
+
+            color: var(--orange);
+
+        }
+
+
+        /* =====================================================
+           MOBILE MENU BUTTON
+        ===================================================== */
+
+        .menu-toggle {
+
+            display: none;
+
+            border: none;
+
+            background: transparent;
+
+            color: white;
+
+            font-size: 25px;
+
+            cursor: pointer;
+
+        }
+
+
+        /* =====================================================
+           PAGE HEADER
+        ===================================================== */
+
+        .page-header {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #111111 0%,
+                    #222222 65%,
+                    #3a1d08 100%
+                );
+
+            color: white;
+
+            text-align: center;
+
+            padding: 75px 25px;
+
+        }
+
+
+        .page-header .small-title {
+
+            color: var(--orange);
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .page-header h1 {
+
+            font-size: clamp(38px, 5vw, 55px);
+
+            line-height: 1.1;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .page-header h1 span {
+
+            color: var(--orange);
+
+        }
+
+
+        .page-header p {
+
+            max-width: 650px;
+
+            margin: auto;
+
+            color: #dddddd;
+
+            font-size: 17px;
+
+        }
+
+
+        /* =====================================================
+           CONTACT SECTION
+        ===================================================== */
+
+        .contact-section {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            padding: 90px 25px;
+
+            display: grid;
+
+            grid-template-columns: 0.8fr 1.4fr;
+
+            gap: 50px;
+
+        }
+
+
+        /* =====================================================
+           CONTACT INFORMATION
+        ===================================================== */
+
+        .contact-info {
+
+            background-color: white;
+
+            border-radius: 12px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.07);
+
+        }
+
+
+        .contact-box {
+
+            min-height: 130px;
+
+            padding: 28px 30px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            border-bottom:
+                1px solid var(--border);
+
+        }
+
+
+        .contact-details h3 {
+
+            color: var(--black);
+
+            font-size: 19px;
+
+            margin-bottom: 7px;
+
+        }
+
+
+        .contact-details p {
+
+            color: var(--gray);
+
+            font-size: 15px;
+
+        }
+
+
+        .contact-details a {
+
+            color: var(--gray);
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .contact-details a:hover {
+
+            color: var(--orange);
+
+        }
+
+
+        /* =====================================================
+           CONTACT ICON
+        ===================================================== */
+
+        .contact-icon {
+
+            width: 50px;
+
+            height: 50px;
+
+            flex-shrink: 0;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background-color: var(--orange);
+
+            color: white;
+
+            border-radius: 50%;
+
+            font-size: 20px;
+
+        }
+
+
+        /* =====================================================
+           SOCIAL MEDIA
+        ===================================================== */
+
+        .social-box {
+
+            padding: 30px;
+
+        }
+
+
+        .social-box h3 {
+
+            color: var(--black);
+
+            font-size: 19px;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .social-links {
+
+            display: flex;
+
+            gap: 10px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .social-links a {
+
+            width: 45px;
+
+            height: 45px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background-color: var(--black);
+
+            color: white;
+
+            border-radius: 6px;
+
+            font-size: 17px;
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .social-links a:hover {
+
+            background-color: var(--orange);
+
+            transform: translateY(-3px);
+
+        }
+
+
+        /* =====================================================
+           CONTACT FORM
+        ===================================================== */
+
+        .contact-form {
+
+            padding-top: 5px;
+
+        }
+
+
+        .contact-form .small-title {
+
+            color: var(--orange);
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 8px;
+
+        }
+
+
+        .contact-form h2 {
+
+            color: var(--black);
+
+            font-size: 40px;
+
+            line-height: 1.2;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .contact-form h2 span {
+
+            color: var(--orange);
+
+        }
+
+
+        .form-heading-line {
+
+            width: 45px;
+
+            height: 4px;
+
+            background-color: var(--orange);
+
+            margin-bottom: 30px;
+
+        }
+
+
+        /* =====================================================
+           FORM
+        ===================================================== */
+
+        .form-group {
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .form-group input,
+        .form-group textarea {
+
+            width: 100%;
+
+            border: 1px solid #d5d5d5;
+
+            background-color: white;
+
+            border-radius: 6px;
+
+            padding: 16px 18px;
+
+            font-family: inherit;
+
+            font-size: 15px;
+
+            color: var(--text);
+
+            outline: none;
+
+            transition:
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+
+        }
+
+
+        .form-group input {
+
+            height: 58px;
+
+        }
+
+
+        .form-group textarea {
+
+            min-height: 220px;
+
+            resize: vertical;
+
+        }
+
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+
+            color: #888888;
+
+        }
+
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+
+            border-color: var(--orange);
+
+            box-shadow:
+                0 0 0 3px rgba(255, 122, 0, 0.12);
+
+        }
+
+
+        /* =====================================================
+           SUBMIT BUTTON
+        ===================================================== */
+
+        .submit-button {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            min-width: 200px;
+
+            padding: 15px 25px;
+
+            border: none;
+
+            border-radius: 6px;
+
+            background-color: var(--orange);
+
+            color: white;
+
+            font-family: inherit;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            cursor: pointer;
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .submit-button:hover {
+
+            background-color: var(--orange-dark);
+
+            transform: translateY(-3px);
+
+        }
+
+
+        /* =====================================================
+           QUICK WHATSAPP
+        ===================================================== */
+
+        .quick-contact {
+
+            margin-top: 30px;
+
+            padding: 20px;
+
+            background-color: var(--black);
+
+            border-radius: 8px;
+
+            color: white;
+
+        }
+
+
+        .quick-contact p {
+
+            color: #bbbbbb;
+
+            font-size: 14px;
+
+            margin-bottom: 8px;
+
+        }
+
+
+        .quick-contact a {
+
+            color: var(--orange);
+
+            font-weight: 600;
+
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            background-color: var(--dark-black);
+
+            color: white;
+
+            padding: 50px 25px 20px;
+
+        }
+
+
+        .footer-container {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: 2fr 1fr 1fr;
+
+            gap: 50px;
+
+        }
+
+
+        .footer-column h3 {
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .footer-column h3 span {
+
+            color: var(--orange);
+
+        }
+
+
+        .footer-column p {
+
+            color: var(--light-gray);
+
+            font-size: 14px;
+
+            margin-bottom: 8px;
+
+        }
+
+
+        .footer-links {
+
+            list-style: none;
+
+        }
+
+
+        .footer-links li {
+
+            margin-bottom: 8px;
+
+        }
+
+
+        .footer-links a {
+
+            color: var(--light-gray);
+
+            font-size: 14px;
+
+            transition: color 0.3s ease;
+
+        }
+
+
+        .footer-links a:hover {
+
+            color: var(--orange);
+
+        }
+
+
+        /* =====================================================
+           COPYRIGHT
+        ===================================================== */
+
+        .copyright {
+
+            max-width: 1200px;
+
+            margin: 35px auto 0;
+
+            padding-top: 20px;
+
+            border-top: 1px solid #292929;
+
+            text-align: center;
+
+            color: #777777;
+
+            font-size: 13px;
+
+        }
+
+
+        /* =====================================================
+           FLOATING WHATSAPP
+        ===================================================== */
+
+        .whatsapp-button {
+
+            position: fixed;
+
+            right: 25px;
+
+            bottom: 25px;
+
+            width: 60px;
+
+            height: 60px;
+
+            background-color: #25D366;
+
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 30px;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.25);
+
+            z-index: 2000;
+
+            transition: all 0.3s ease;
+
+        }
+
+
+        .whatsapp-button:hover {
+
+            transform: scale(1.1);
+
+        }
+
+
+        /* =====================================================
+           TABLET
+        ===================================================== */
+
+        @media (max-width: 900px) {
+
+            .contact-section {
+
+                grid-template-columns: 1fr;
+
+                max-width: 750px;
+
+            }
+
+
+            .footer-container {
+
+                grid-template-columns: 1fr 1fr;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 600px) {
+
+            .navbar {
+
+                min-height: 70px;
+
+                padding: 0 18px;
+
+            }
+
+
+            .logo {
+
+                font-size: 20px;
+
+            }
+
+
+            .menu-toggle {
+
+                display: block;
+
+            }
+
+
+            .nav-links {
+
+                position: absolute;
+
+                top: 70px;
+
+                left: 0;
+
+                width: 100%;
+
+                background-color: var(--black);
+
+                display: none;
+
+                flex-direction: column;
+
+                gap: 0;
+
+                padding: 10px 20px 20px;
+
+            }
+
+
+            .nav-links.active {
+
+                display: flex;
+
+            }
+
+
+            .nav-links li {
+
+                width: 100%;
+
+            }
+
+
+            .nav-links a {
+
+                display: block;
+
+                padding: 13px 5px;
+
+            }
+
+
+            .page-header {
+
+                padding: 60px 20px;
+
+            }
+
+
+            .page-header h1 {
+
+                font-size: 38px;
+
+            }
+
+
+            .page-header p {
+
+                font-size: 15px;
+
+            }
+
+
+            .contact-section {
+
+                padding: 60px 20px;
+
+                gap: 40px;
+
+            }
+
+
+            .contact-box {
+
+                min-height: 110px;
+
+                padding: 22px;
+
+            }
+
+
+            .contact-form h2 {
+
+                font-size: 32px;
+
+            }
+
+
+            .form-group input {
+
+                height: 55px;
+
+            }
+
+
+            .form-group textarea {
+
+                min-height: 200px;
+
+            }
+
+
+            .submit-button {
+
+                width: 100%;
+
+            }
+
+
+            .footer-container {
+
+                grid-template-columns: 1fr;
+
+                gap: 30px;
+
+            }
+
+
+            .whatsapp-button {
+
+                width: 55px;
+
+                height: 55px;
+
+                right: 18px;
+
+                bottom: 18px;
+
+                font-size: 27px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ===================================================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="#" class="logo">
+                Jerry <span>Digital</span>
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="index3.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Portfolio.html">
+                        Portfolio
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="Contact.html"
+                        class="active"
+                    >
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         PAGE HEADER
+    ===================================================== -->
+
+    <section class="page-header">
+
+        <div class="small-title">
+            Contact Us
+        </div>
+
+        <h1>
+            Let's
+            <span>Work Together</span>
+        </h1>
+
+        <p>
+            Have a printing project, digital service request
+            or enquiry? Get in touch with Jerry Digital today.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT SECTION
+    ===================================================== -->
+
+    <section class="contact-section">
+
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="contact-info">
+
+
+            <!-- PHONE -->
+
+            <div class="contact-box">
+
+                <div class="contact-details">
+
+                    <h3>
+                        Phone
+                    </h3>
+
+                    <p>
+
+                        <a href="tel:+256763727742">
+                            +256 763 727 742
+                        </a>
+
+                    </p>
+
+                </div>
+
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- ADDRESS -->
+
+            <div class="contact-box">
+
+                <div class="contact-details">
+
+                    <h3>
+                        Address
+                    </h3>
+
+                    <p>
+                        Kampala, Uganda
+                    </p>
+
+                </div>
+
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="contact-box">
+
+                <div class="contact-details">
+
+                    <h3>
+                        E-Mail
+                    </h3>
+
+                    <p>
+
+                        <a href="mailto:kasulejerryjordan1@gmail.com">
+
+                            kasulejerryjordan1@gmail.com
+
+                        </a>
+
+                    </p>
+
+                </div>
+
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- SOCIAL MEDIA -->
+
+            <div class="social-box">
+
+                <h3>
+                    Follow Us
+                </h3>
+
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+
+                    <a href="#" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             CONTACT FORM
+        ================================================== -->
+
+        <div class="contact-form">
+
+
+            <div class="small-title">
+                Get In Touch
+            </div>
+
+
+            <h2>
+                Contact
+                <span>Jerry Digital</span>
+            </h2>
+
+
+            <div class="form-heading-line"></div>
+
+
+            <!-- =================================================
+                 EMAIL CONTACT FORM
+
+                 IMPORTANT:
+                 Replace YOUR_EMAIL@example.com below with
+                 the email address where you want messages sent.
+            ================================================== -->
+
+            <form
+                action="https://formsubmit.co/kasulejerryjordan1@gmail.com"
+                method="POST"
+            >
+
+
+                <!-- EMAIL SUBJECT -->
+
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Contact Message - Jerry Digital Printers"
+                >
+
+
+                <!-- REPLY TO CUSTOMER -->
+
+                <input
+                    type="hidden"
+                    name="_replyto"
+                    value=""
+                >
+
+
+                <!-- EMAIL TEMPLATE -->
+
+                <input
+                    type="hidden"
+                    name="_template"
+                    value="table"
+                >
+
+
+                <!-- SPAM PROTECTION -->
+
+                <input
+                    type="text"
+                    name="_honey"
+                    style="display:none"
+                    tabindex="-1"
+                    autocomplete="off"
+                >
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Name*"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email*"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Phone Number"
+                        autocomplete="tel"
+                    >
+
+                </div>
+
+
+                <!-- SUBJECT -->
+
+                <div class="form-group">
+
+                    <input
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                    >
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div class="form-group">
+
+                    <textarea
+                        name="message"
+                        placeholder="Tell us how we can help you..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- SEND BUTTON -->
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+
+                    Send Message
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+            </form>
+
+
+            <!-- =================================================
+                 QUICK WHATSAPP
+            ================================================== -->
+
+            <div class="quick-contact">
+
+                <p>
+                    Need a quick response?
+                </p>
+
+                <a
+                    href="https://wa.me/256763727742"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Chat with us on WhatsApp
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+
+    <footer>
+
+        <div class="footer-container">
+
+
+            <!-- COMPANY -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Jerry
+                    <span>Digital Printers</span>
+                </h3>
+
+                <p>
+                    Your one-stop solution for professional
+                    printing, digital services, stationery
+                    and more.
+                </p>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#">
+                            Home
+                        </a>
+                    </li>
+
+                  
+
+                    <li>
+                        <a href="Services.html">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Portfolio.html">
+                            Portfolio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact
+                </h3>
+
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +256 763 727 742
+
+                </p>
+
+
+                <p>
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    +256 763 727 742
+
+                </p>
+
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                kasulejerryjordan1@gmail.com
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            &copy; 2026 Jerry Digital Printers.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         FLOATING WHATSAPP
+    ===================================================== -->
+
+    <a
+        href="https://wa.me/256763727742"
+        class="whatsapp-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with Jerry Digital on WhatsApp"
+        title="Chat with us on WhatsApp"
+    >
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ===================================================== -->
+
+    <script>
+
+        /* =================================================
+           MOBILE NAVIGATION
+        ================================================= */
+
+        const menuToggle =
+            document.getElementById("menuToggle");
+
+        const navLinks =
+            document.getElementById("navLinks");
+
+
+        menuToggle.addEventListener(
+            "click",
+            function () {
+
+                navLinks.classList.toggle("active");
+
+
+                const icon =
+                    menuToggle.querySelector("i");
+
+
+                if (
+                    navLinks.classList.contains("active")
+                ) {
+
+                    icon.classList.remove("fa-bars");
+
+                    icon.classList.add("fa-xmark");
+
+                } else {
+
+                    icon.classList.remove("fa-xmark");
+
+                    icon.classList.add("fa-bars");
+
+                }
+
+            }
+        );
+
+
+        /* =================================================
+           CLOSE MOBILE MENU AFTER CLICK
+        ================================================= */
+
+        const navigationLinks =
+            navLinks.querySelectorAll("a");
+
+
+        navigationLinks.forEach(
+            function (link) {
+
+                link.addEventListener(
+                    "click",
+                    function () {
+
+                        navLinks.classList.remove("active");
+
+
+                        const icon =
+                            menuToggle.querySelector("i");
+
+
+                        icon.classList.remove(
+                            "fa-xmark"
+                        );
+
+                        icon.classList.add(
+                            "fa-bars"
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>

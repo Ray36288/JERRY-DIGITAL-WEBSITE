@@ -1,0 +1,3590 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =====================================================
+         BASIC PAGE INFORMATION
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Jerry Digital provides reliable airport pick-up, airport transfers and accommodation assistance in Uganda. Book conveniently through WhatsApp."
+    >
+
+    <meta
+        name="keywords"
+        content="airport pickup Uganda, airport transfer Kampala, Entebbe airport pickup, Uganda airport taxi, accommodation Uganda, Jerry Digital"
+    >
+
+    <meta
+        name="author"
+        content="Jerry Digital Printers"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <title>
+        Airport Pick Up | Jerry Digital Printers
+    </title>
+
+
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
+
+    <link
+        rel="icon"
+        href="images/favicon.png"
+        type="image/png"
+    >
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+<style>
+
+/* =====================================================
+   ROOT VARIABLES
+===================================================== */
+
+:root {
+
+    --primary: #ff7a00;
+    --primary-dark: #df6800;
+
+    --black: #111111;
+    --black-light: #1a1a1a;
+
+    --white: #ffffff;
+
+    --light: #f7f7f7;
+    --light-gray: #eeeeee;
+
+    --text: #222222;
+    --text-light: #666666;
+
+    --border: #e5e5e5;
+
+    --whatsapp: #25d366;
+
+    --container: 1200px;
+
+    --transition: all 0.3s ease;
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: "Inter", Arial, sans-serif;
+
+    background: var(--white);
+
+    color: var(--text);
+
+    line-height: 1.6;
+}
+
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+img {
+
+    width: 100%;
+
+    display: block;
+}
+
+
+button,
+input,
+select,
+textarea {
+
+    font-family: inherit;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.container {
+
+    width: 100%;
+
+    max-width: var(--container);
+
+    margin: auto;
+
+    padding-left: 25px;
+
+    padding-right: 25px;
+}
+
+
+/* =====================================================
+   TOP BAR
+===================================================== */
+
+.top-bar {
+
+    background: var(--primary);
+
+    color: var(--white);
+
+    font-size: 13px;
+}
+
+
+.top-bar-container {
+
+    min-height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.top-bar-left,
+.top-bar-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.top-bar i {
+
+    margin-right: 6px;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background: rgba(17,17,17,0.98);
+
+    box-shadow: 0 3px 20px rgba(0,0,0,0.15);
+}
+
+
+.navbar {
+
+    min-height: 78px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: var(--white);
+
+    font-size: 22px;
+
+    font-weight: 800;
+}
+
+
+.logo-mark {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--primary);
+
+    border-radius: 8px;
+
+    color: var(--white);
+}
+
+
+.logo-text span {
+
+    color: var(--primary);
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 32px;
+
+    list-style: none;
+}
+
+
+.nav-links a {
+
+    color: #eeeeee;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    padding: 29px 0;
+
+    position: relative;
+
+    transition: var(--transition);
+}
+
+
+.nav-links a:hover {
+
+    color: var(--primary);
+}
+
+
+.nav-links a.active {
+
+    color: var(--primary);
+}
+
+
+.nav-cta {
+
+    background: var(--primary);
+
+    padding: 11px 18px !important;
+
+    border-radius: 5px;
+
+    color: var(--white) !important;
+}
+
+
+.nav-cta:hover {
+
+    background: var(--primary-dark);
+
+}
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+.menu-toggle {
+
+    display: none;
+
+    background: transparent;
+
+    border: none;
+
+    color: var(--white);
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   PAGE HERO
+===================================================== */
+
+.page-hero {
+
+    min-height: 560px;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10,10,10,0.95),
+            rgba(10,10,10,0.65),
+            rgba(10,10,10,0.25)
+        ),
+        url("images/airport-pickup.png")
+        center/cover no-repeat;
+
+    color: var(--white);
+}
+
+
+.page-hero-content {
+
+    max-width: 700px;
+
+    padding-top: 80px;
+
+    padding-bottom: 80px;
+}
+
+
+.hero-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: var(--primary);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+
+.hero-label::before {
+
+    content: "";
+
+    width: 30px;
+
+    height: 2px;
+
+    background: var(--primary);
+}
+
+
+.page-hero h1 {
+
+    font-size: clamp(42px, 6vw, 70px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 22px;
+}
+
+
+.page-hero h1 span {
+
+    color: var(--primary);
+}
+
+
+.page-hero p {
+
+    max-width: 620px;
+
+    color: #dddddd;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 13px;
+}
+
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 14px 23px;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: var(--transition);
+}
+
+
+.btn-primary {
+
+    background: var(--primary);
+
+    color: var(--white);
+}
+
+
+.btn-primary:hover {
+
+    background: var(--primary-dark);
+
+    transform: translateY(-3px);
+}
+
+
+.btn-whatsapp {
+
+    background: var(--whatsapp);
+
+    color: var(--white);
+}
+
+
+.btn-whatsapp:hover {
+
+    background: #1fb958;
+
+    transform: translateY(-3px);
+}
+
+
+.btn-outline {
+
+    border: 1px solid rgba(255,255,255,0.7);
+
+    color: var(--white);
+}
+
+
+.btn-outline:hover {
+
+    background: var(--white);
+
+    color: var(--black);
+}
+
+
+/* =====================================================
+   QUICK BENEFITS
+===================================================== */
+
+.benefits {
+
+    background: var(--primary);
+
+    color: var(--white);
+}
+
+
+.benefits-grid {
+
+    min-height: 110px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+}
+
+
+.benefit {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 13px;
+
+    border-right: 1px solid rgba(255,255,255,0.3);
+
+    padding: 15px;
+}
+
+
+.benefit:last-child {
+
+    border-right: none;
+}
+
+
+.benefit i {
+
+    font-size: 25px;
+}
+
+
+.benefit strong {
+
+    display: block;
+
+    font-size: 14px;
+}
+
+
+.benefit span {
+
+    display: block;
+
+    font-size: 12px;
+
+    opacity: 0.85;
+}
+
+
+/* =====================================================
+   GENERAL SECTION
+===================================================== */
+
+.section {
+
+    padding: 90px 0;
+}
+
+
+.section-light {
+
+    background: var(--light);
+}
+
+
+.section-heading {
+
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+.section-label {
+
+    color: var(--primary);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    display: inline-block;
+
+    margin-bottom: 10px;
+}
+
+
+.section-heading h2 {
+
+    font-size: clamp(32px,4vw,45px);
+
+    line-height: 1.15;
+
+    margin-bottom: 15px;
+}
+
+
+.section-heading p {
+
+    color: var(--text-light);
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   SERVICE INTRO
+===================================================== */
+
+.intro-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.intro-image {
+
+    position: relative;
+}
+
+
+.intro-image img {
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+.image-badge {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    right: -20px;
+
+    background: var(--primary);
+
+    color: var(--white);
+
+    padding: 20px 25px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+
+.image-badge i {
+
+    font-size: 25px;
+
+    margin-bottom: 5px;
+}
+
+
+.image-badge strong {
+
+    display: block;
+
+    font-size: 15px;
+}
+
+
+.intro-content h2 {
+
+    font-size: 40px;
+
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+
+.intro-content p {
+
+    color: var(--text-light);
+
+    font-size: 15px;
+
+    margin-bottom: 22px;
+}
+
+
+.check-list {
+
+    list-style: none;
+
+    margin-bottom: 30px;
+}
+
+
+.check-list li {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 13px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.check-list i {
+
+    color: var(--primary);
+}
+
+
+/* =====================================================
+   SERVICE CARDS
+===================================================== */
+
+.service-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 25px;
+}
+
+
+.service-card {
+
+    padding: 32px 27px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+
+    background: var(--white);
+
+    transition: var(--transition);
+}
+
+
+.service-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+
+    border-color: transparent;
+}
+
+
+.service-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(255,122,0,0.1);
+
+    color: var(--primary);
+
+    border-radius: 8px;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+}
+
+
+.service-card h3 {
+
+    font-size: 19px;
+
+    margin-bottom: 10px;
+}
+
+
+.service-card p {
+
+    color: var(--text-light);
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   BOOKING SECTION
+===================================================== */
+
+.booking-section {
+
+    background: var(--black);
+
+    color: var(--white);
+}
+
+
+.booking-grid {
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+
+.booking-content h2 {
+
+    font-size: 40px;
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+}
+
+
+.booking-content > p {
+
+    color: #aaaaaa;
+
+    font-size: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.booking-steps {
+
+    list-style: none;
+}
+
+
+.booking-steps li {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 22px;
+}
+
+
+.step-number {
+
+    min-width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--primary);
+
+    color: var(--white);
+
+    border-radius: 50%;
+
+    font-weight: 800;
+
+    font-size: 13px;
+}
+
+
+.booking-steps strong {
+
+    display: block;
+
+    margin-bottom: 3px;
+}
+
+
+.booking-steps span {
+
+    color: #999999;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   BOOKING FORM
+===================================================== */
+
+.booking-form {
+
+    background: var(--white);
+
+    color: var(--text);
+
+    padding: 35px;
+
+    border-radius: 10px;
+}
+
+
+.booking-form h3 {
+
+    font-size: 25px;
+
+    margin-bottom: 5px;
+}
+
+
+.booking-form > p {
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+}
+
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+.form-group {
+
+    margin-bottom: 15px;
+}
+
+
+.form-group.full {
+
+    grid-column: 1 / -1;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    margin-bottom: 6px;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    border: 1px solid var(--border);
+
+    border-radius: 5px;
+
+    padding: 12px 13px;
+
+    outline: none;
+
+    font-size: 13px;
+
+    background: #fafafa;
+
+    transition: var(--transition);
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border-color: var(--primary);
+
+    background: var(--white);
+}
+
+
+.form-group textarea {
+
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+
+.booking-submit {
+
+    width: 100%;
+
+    border: none;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   ACCOMMODATION
+===================================================== */
+
+.accommodation-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+.accommodation-image img {
+
+    height: 470px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+.accommodation-content h2 {
+
+    font-size: 40px;
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+}
+
+
+.accommodation-content p {
+
+    color: var(--text-light);
+
+    font-size: 15px;
+
+    margin-bottom: 22px;
+}
+
+
+.accommodation-list {
+
+    list-style: none;
+
+    margin-bottom: 30px;
+}
+
+
+.accommodation-list li {
+
+    display: flex;
+
+    gap: 12px;
+
+    align-items: center;
+
+    margin-bottom: 13px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.accommodation-list i {
+
+    color: var(--primary);
+}
+
+
+/* =====================================================
+   WHY US
+===================================================== */
+
+.why-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 25px;
+}
+
+
+.why-card {
+
+    text-align: center;
+
+    padding: 35px 25px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+}
+
+
+.why-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(255,122,0,0.1);
+
+    color: var(--primary);
+
+    border-radius: 50%;
+
+    font-size: 22px;
+}
+
+
+.why-card h3 {
+
+    font-size: 18px;
+
+    margin-bottom: 9px;
+}
+
+
+.why-card p {
+
+    color: var(--text-light);
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+.faq {
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+
+.faq-item {
+
+    border-bottom: 1px solid var(--border);
+
+    padding: 20px 0;
+}
+
+
+.faq-item h3 {
+
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+
+.faq-item p {
+
+    color: var(--text-light);
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.cta {
+
+    background:
+        linear-gradient(
+            120deg,
+            var(--primary),
+            #e26300
+        );
+
+    color: var(--white);
+
+    text-align: center;
+
+    padding: 85px 25px;
+}
+
+
+.cta-content {
+
+    max-width: 750px;
+
+    margin: auto;
+}
+
+
+.cta h2 {
+
+    font-size: clamp(30px,4vw,45px);
+
+    line-height: 1.15;
+
+    margin-bottom: 15px;
+}
+
+
+.cta p {
+
+    font-size: 16px;
+
+    opacity: 0.9;
+
+    margin-bottom: 28px;
+}
+
+
+.cta .btn {
+
+    background: var(--black);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background: #0b0b0b;
+
+    color: var(--white);
+
+    padding-top: 70px;
+}
+
+
+.footer-grid {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1.3fr;
+
+    gap: 45px;
+
+    padding-bottom: 55px;
+}
+
+
+.footer-column h3 {
+
+    font-size: 17px;
+
+    margin-bottom: 20px;
+}
+
+
+.footer-brand {
+
+    font-size: 21px !important;
+}
+
+
+.footer-brand span {
+
+    color: var(--primary);
+}
+
+
+.footer-column p {
+
+    color: #999999;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    margin-bottom: 10px;
+}
+
+
+.footer-links {
+
+    list-style: none;
+}
+
+
+.footer-links li {
+
+    margin-bottom: 11px;
+}
+
+
+.footer-links a {
+
+    color: #999999;
+
+    font-size: 13px;
+
+    transition: var(--transition);
+}
+
+
+.footer-links a:hover {
+
+    color: var(--primary);
+}
+
+
+.footer-contact {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+
+.footer-contact i {
+
+    color: var(--primary);
+
+    margin-top: 4px;
+}
+
+
+.social-links {
+
+    display: flex;
+
+    gap: 9px;
+
+    margin-top: 20px;
+}
+
+
+.social-links a {
+
+    width: 37px;
+
+    height: 37px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #1c1c1c;
+
+    color: #cccccc;
+
+    border-radius: 5px;
+
+    transition: var(--transition);
+}
+
+
+.social-links a:hover {
+
+    background: var(--primary);
+
+    color: var(--white);
+}
+
+
+.footer-bottom {
+
+    border-top: 1px solid #292929;
+
+    padding: 20px 0;
+}
+
+
+.footer-bottom-content {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.footer-bottom p {
+
+    color: #666666;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   FLOATING WHATSAPP
+===================================================== */
+
+.whatsapp-button {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    width: 60px;
+
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--whatsapp);
+
+    color: var(--white);
+
+    border-radius: 50%;
+
+    font-size: 30px;
+
+    box-shadow: 0 7px 25px rgba(0,0,0,0.25);
+
+    z-index: 2000;
+
+    transition: var(--transition);
+}
+
+
+.whatsapp-button:hover {
+
+    transform: scale(1.1);
+}
+
+
+/* =====================================================
+   RESPONSIVE TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .intro-grid,
+    .accommodation-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .booking-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .service-grid {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+
+    .why-grid {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+
+    .footer-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .benefits-grid {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+
+    .benefit {
+
+        border-bottom: 1px solid rgba(255,255,255,0.25);
+
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .top-bar {
+
+        display: none;
+
+    }
+
+
+    .container {
+
+        padding-left: 20px;
+
+        padding-right: 20px;
+
+    }
+
+
+    .navbar {
+
+        min-height: 70px;
+
+    }
+
+
+    .logo {
+
+        font-size: 18px;
+
+    }
+
+
+    .logo-mark {
+
+        width: 38px;
+
+        height: 38px;
+
+    }
+
+
+    .menu-toggle {
+
+        display: block;
+
+    }
+
+
+    .nav-links {
+
+        position: absolute;
+
+        top: 70px;
+
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        background: var(--black);
+
+        padding: 10px 20px 20px;
+
+    }
+
+
+    .nav-links.active {
+
+        display: flex;
+
+    }
+
+
+    .nav-links li {
+
+        width: 100%;
+
+    }
+
+
+    .nav-links a {
+
+        display: block;
+
+        padding: 14px 5px;
+
+    }
+
+
+    .nav-cta {
+
+        text-align: center;
+
+        margin-top: 8px;
+
+    }
+
+
+    .page-hero {
+
+        min-height: 650px;
+
+    }
+
+
+    .page-hero h1 {
+
+        font-size: 43px;
+
+    }
+
+
+    .page-hero p {
+
+        font-size: 15px;
+
+    }
+
+
+    .benefits-grid {
+
+        grid-template-columns: 1fr;
+
+        padding: 15px 0;
+
+    }
+
+
+    .benefit {
+
+        border-right: none;
+
+    }
+
+
+    .section {
+
+        padding: 70px 0;
+
+    }
+
+
+    .intro-image img,
+    .accommodation-image img {
+
+        height: 350px;
+
+    }
+
+
+    .image-badge {
+
+        right: 15px;
+
+    }
+
+
+    .intro-content h2,
+    .accommodation-content h2,
+    .booking-content h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .service-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .why-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .booking-form {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .form-group.full {
+
+        grid-column: auto;
+
+    }
+
+
+    .footer-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+
+    .footer-bottom-content {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .whatsapp-button {
+
+        width: 55px;
+
+        height: 55px;
+
+        right: 18px;
+
+        bottom: 18px;
+
+        font-size: 27px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
+
+<div class="top-bar">
+
+    <div class="container top-bar-container">
+
+        <div class="top-bar-left">
+
+            <span>
+                <i class="fa-solid fa-location-dot"></i>
+                Uganda
+            </span>
+
+            <span>
+                <i class="fa-solid fa-clock"></i>
+                Reliable Service
+            </span>
+
+        </div>
+
+
+        <div class="top-bar-right">
+
+            <span>
+                <i class="fa-solid fa-phone"></i>
+                +256 763727742
+            </span>
+
+            <span>
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp Booking
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+    <nav class="navbar container">
+
+
+        <a href="index3.html" class="logo">
+
+            <div class="logo-mark">
+
+                <i class="fa-solid fa-print"></i>
+
+            </div>
+
+            <div class="logo-text">
+
+                Jerry <span>Digital</span>
+
+            </div>
+
+        </a>
+
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+        >
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index3.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="About.html">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="Services.html">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="Portfolio.html">
+                    Portfolio
+                </a>
+            </li>
+
+            <li>
+                <a href="Contact.html" class="nav-cta">
+                    Contact Us
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main>
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <div class="page-hero-content">
+
+            <div class="hero-label">
+                Travel & Guest Services
+            </div>
+
+
+            <h1>
+
+                Arrive
+                <span>Comfortably.</span>
+                Travel With Ease.
+
+            </h1>
+
+
+            <p>
+
+                Need a reliable airport pick-up in Uganda?
+                Jerry Digital can help arrange your airport
+                transfer and accommodation so you can focus
+                on enjoying your trip.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#booking"
+                    class="btn btn-primary"
+                >
+
+                    Book Airport Pick-Up
+
+                    <i class="fa-solid fa-arrow-down"></i>
+
+                </a>
+
+
+                <a
+                    href="https://wa.me/256763727742"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-whatsapp"
+                >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Order on WhatsApp
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BENEFITS
+===================================================== -->
+
+<section class="benefits">
+
+    <div class="container benefits-grid">
+
+
+        <div class="benefit">
+
+            <i class="fa-solid fa-plane-arrival"></i>
+
+            <div>
+
+                <strong>
+                    Airport Pick-Up
+                </strong>
+
+                <span>
+                    Convenient transfers
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <i class="fa-solid fa-car"></i>
+
+            <div>
+
+                <strong>
+                    Comfortable Travel
+                </strong>
+
+                <span>
+                    Travel with peace of mind
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <i class="fa-solid fa-hotel"></i>
+
+            <div>
+
+                <strong>
+                    Accommodation
+                </strong>
+
+                <span>
+                    Help finding a place to stay
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            <div>
+
+                <strong>
+                    WhatsApp Booking
+                </strong>
+
+                <span>
+                    Easy communication
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INTRODUCTION
+===================================================== -->
+
+<section class="section">
+
+    <div class="container intro-grid">
+
+
+        <div class="intro-image">
+
+            <img
+                src="images/AP1.jpeg"
+                alt="Airport pick-up service"
+            >
+
+
+            <div class="image-badge">
+
+                <i class="fa-solid fa-plane-arrival"></i>
+
+                <strong>
+                    Airport Transfer
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="intro-content">
+
+            <span class="section-label">
+                Airport Pick-Up
+            </span>
+
+
+            <h2>
+                Start Your Journey
+                The Right Way.
+            </h2>
+
+
+            <p>
+
+                Arriving in Uganda? Let us help make your
+                arrival easier. Our airport pick-up service
+                connects you with a convenient transport
+                option for your journey from the airport.
+
+            </p>
+
+
+            <p>
+
+                Simply send us your arrival details through
+                WhatsApp and we can discuss the transport
+                arrangements with you before your arrival.
+
+            </p>
+
+
+            <ul class="check-list">
+
+                <li>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Airport arrival coordination
+
+                </li>
+
+
+                <li>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Meet-and-greet arrangements
+
+                </li>
+
+
+                <li>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Comfortable transportation options
+
+                </li>
+
+
+                <li>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Flexible arrangements
+
+                </li>
+
+
+                <li>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    WhatsApp communication
+
+                </li>
+
+            </ul>
+
+
+            <a
+                href="https://wa.me/256763727742?text=Hello%20Jerry%20Digital%2C%20I%20would%20like%20to%20book%20an%20airport%20pick-up."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp"
+            >
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Book Through WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES INCLUDED
+===================================================== -->
+
+<section class="section section-light">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                What We Offer
+            </span>
+
+
+            <h2>
+                More Than Just A Pick-Up
+            </h2>
+
+
+            <p>
+
+                We can help you organize important
+                travel arrangements before and after
+                your arrival.
+
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <i class="fa-solid fa-plane-arrival"></i>
+
+                </div>
+
+
+                <h3>
+                    Airport Pick-Up
+                </h3>
+
+
+                <p>
+
+                    Arrange transportation from the airport
+                    to your destination.
+
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <i class="fa-solid fa-handshake"></i>
+
+                </div>
+
+
+                <h3>
+                    Meet & Greet
+                </h3>
+
+
+                <p>
+
+                    Coordinate your arrival and make it easier
+                    to connect with your driver or transport
+                    arrangement.
+
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <i class="fa-solid fa-hotel"></i>
+
+                </div>
+
+
+                <h3>
+                    Accommodation
+                </h3>
+
+
+                <p>
+
+                    Need somewhere to stay? We can help you
+                    identify accommodation options suitable
+                    for your trip.
+
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <i class="fa-solid fa-route"></i>
+
+                </div>
+
+
+                <h3>
+                    Travel Coordination
+                </h3>
+
+
+                <p>
+
+                    Discuss your transport and accommodation
+                    requirements with us before your arrival.
+
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </div>
+
+
+                <h3>
+                    WhatsApp Booking
+                </h3>
+
+
+                <p>
+
+                    Send your requirements directly through
+                    WhatsApp and communicate with us easily.
+
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                </div>
+
+
+                <h3>
+                    Customer Support
+                </h3>
+
+
+                <p>
+
+                    Contact us when you need information
+                    about your booking or arrangements.
+
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WHATSAPP BOOKING
+===================================================== -->
+
+<section
+    class="section booking-section"
+    id="booking"
+>
+
+    <div class="container booking-grid">
+
+
+        <div class="booking-content">
+
+            <span class="section-label">
+                Easy Booking
+            </span>
+
+
+            <h2>
+                Book Your Airport
+                Pick-Up Through WhatsApp.
+            </h2>
+
+
+            <p>
+
+                No complicated booking system. Send us your
+                travel details and we can discuss the
+                arrangements directly on WhatsApp.
+
+            </p>
+
+
+            <ul class="booking-steps">
+
+                <li>
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Enter Your Details
+                        </strong>
+
+                        <span>
+                            Tell us your name and contact details.
+                        </span>
+
+                    </div>
+
+                </li>
+
+
+                <li>
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Provide Your Flight Information
+                        </strong>
+
+                        <span>
+                            Share your arrival date, time and flight number.
+                        </span>
+
+                    </div>
+
+                </li>
+
+
+                <li>
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Send Your Request
+                        </strong>
+
+                        <span>
+                            Your information will open in WhatsApp.
+                        </span>
+
+                    </div>
+
+                </li>
+
+
+                <li>
+
+                    <div class="step-number">
+                        04
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Confirm Your Arrangement
+                        </strong>
+
+                        <span>
+                            Discuss availability, pricing and arrangements with us.
+                        </span>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- BOOKING FORM -->
+
+        <div class="booking-form">
+
+            <h3>
+                Airport Pick-Up Request
+            </h3>
+
+
+            <p>
+                Fill in your details and send the request
+                directly to our WhatsApp.
+            </p>
+
+
+            <form id="airportBookingForm">
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Full Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Phone Number *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="+256..."
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Arrival Date *
+                        </label>
+
+                        <input
+                            type="date"
+                            id="arrivalDate"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Arrival Time *
+                        </label>
+
+                        <input
+                            type="time"
+                            id="arrivalTime"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Flight Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="flight"
+                            placeholder="e.g. UR 123"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Number of Passengers
+                        </label>
+
+                        <select id="passengers">
+
+                            <option value="1">
+                                1 Passenger
+                            </option>
+
+                            <option value="2">
+                                2 Passengers
+                            </option>
+
+                            <option value="3">
+                                3 Passengers
+                            </option>
+
+                            <option value="4">
+                                4 Passengers
+                            </option>
+
+                            <option value="5+">
+                                5+ Passengers
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label>
+                            Destination / Hotel *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="destination"
+                            placeholder="Where are you going?"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label>
+                            Do You Need Accommodation?
+                        </label>
+
+                        <select id="accommodation">
+
+                            <option value="No">
+                                No
+                            </option>
+
+                            <option value="Yes">
+                                Yes, I need accommodation
+                            </option>
+
+                            <option value="Not sure">
+                                I'm not sure yet
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label>
+                            Additional Information
+                        </label>
+
+                        <textarea
+                            id="details"
+                            placeholder="Tell us anything else we should know..."
+                        ></textarea>
+
+                    </div>
+
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-whatsapp booking-submit"
+                >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Send Booking Request
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ACCOMMODATION
+===================================================== -->
+
+<section class="section">
+
+    <div class="container accommodation-grid">
+
+
+        <div class="accommodation-image">
+
+            <img
+                src="images/acc1.jpg"
+                alt="Comfortable accommodation"
+            >
+
+        </div>
+
+
+        <div class="accommodation-content">
+
+            <span class="section-label">
+                Accommodation
+            </span>
+
+
+            <h2>
+                Need A Place To Stay?
+            </h2>
+
+
+            <p>
+
+                If you are travelling to Uganda and need
+                accommodation, let us know when making your
+                airport pick-up request.
+
+            </p>
+
+
+            <p>
+
+                We can discuss your preferred location,
+                budget and type of accommodation and help
+                you find an option suitable for your stay.
+
+            </p>
+
+
+            <ul class="accommodation-list">
+
+                <li>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Accommodation options
+
+                </li>
+
+
+                <li>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Different locations
+
+                </li>
+
+
+                <li>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Different room types
+
+                </li>
+
+
+                <li>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Short and longer stays
+
+                </li>
+
+
+                <li>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Assistance through WhatsApp
+
+                </li>
+
+            </ul>
+
+
+            <a
+                href="https://wa.me/256763727742"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp"
+            >
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Ask About Accommodation
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WHY CHOOSE US
+===================================================== -->
+
+<section class="section section-light">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                Why Use Our Service
+            </span>
+
+
+            <h2>
+                Make Your Arrival Easier
+            </h2>
+
+
+            <p>
+
+                We make it easier to communicate your
+                travel requirements before you arrive.
+
+            </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                </div>
+
+
+                <h3>
+                    Convenient
+                </h3>
+
+
+                <p>
+
+                    Arrange your requirements before your
+                    journey through WhatsApp.
+
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                </div>
+
+
+                <h3>
+                    Easy Communication
+                </h3>
+
+
+                <p>
+
+                    Communicate directly with us about
+                    your travel requirements.
+
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+
+
+                <h3>
+                    Travel Support
+                </h3>
+
+
+                <p>
+
+                    Discuss airport transfers and
+                    accommodation in one place.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                Frequently Asked Questions
+            </span>
+
+
+            <h2>
+                Airport Pick-Up FAQ
+            </h2>
+
+        </div>
+
+
+        <div class="faq">
+
+
+            <div class="faq-item">
+
+                <h3>
+                    Where can I be picked up?
+                </h3>
+
+                <p>
+
+                    Send us your arrival airport and
+                    destination when making your request.
+                    We will discuss the available arrangement
+                    with you.
+
+                </p>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <h3>
+                    How do I book?
+                </h3>
+
+                <p>
+
+                    You can fill in the booking form on this
+                    page or contact Jerry Digital directly
+                    through WhatsApp.
+
+                </p>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <h3>
+                    Can I request accommodation too?
+                </h3>
+
+                <p>
+
+                    Yes. Mention that you need accommodation
+                    when sending your airport pick-up request
+                    and we can discuss the available options.
+
+                </p>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <h3>
+                    How early should I book?
+                </h3>
+
+                <p>
+
+                    We recommend contacting us as early as
+                    possible so that transport and
+                    accommodation arrangements can be
+                    discussed before your arrival.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta">
+
+    <div class="cta-content">
+
+        <h2>
+            Arriving In Uganda?
+        </h2>
+
+
+        <p>
+
+            Let us know your arrival details and tell us
+            what you need. Airport pick-up, accommodation
+            or both.
+
+        </p>
+
+
+        <a
+            href="https://wa.me/256763727742?text=Hello%20Jerry%20Digital%2C%20I%20am%20planning%20to%20travel%20to%20Uganda%20and%20would%20like%20information%20about%20airport%20pick-up."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+        >
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            Chat With Us On WhatsApp
+
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+
+        <div class="footer-column">
+
+            <h3 class="footer-brand">
+
+                Jerry
+                <span>Digital Printers</span>
+
+            </h3>
+
+
+            <p>
+
+                Professional printing and digital
+                solutions for individuals, businesses
+                and organizations.
+
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="#" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="index3.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="About.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Portfolio.html">
+                        Portfolio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Services
+            </h3>
+
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="Airport.html">
+                        Airport Pick-Up
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        DTF Printing
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Digital Printing
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Stationery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Online Applications
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Contact Us
+            </h3>
+
+
+            <div class="footer-contact">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <p>
+                    +256 763727742
+                </p>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                <p>
+                    +256 763727742
+                </p>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <p>
+                    kasulejerry1@gmail.com
+                </p>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <p>
+                    Uganda
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-content">
+
+            <p>
+                &copy; 2026 Jerry Digital Printers.
+                All Rights Reserved.
+            </p>
+
+
+            <p>
+                Airport Pick-Up & Guest Services
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
+
+<a
+    href="https://wa.me/256763727742"
+    class="whatsapp-button"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with Jerry Digital on WhatsApp"
+    title="Chat with us on WhatsApp"
+>
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const navLinks =
+    document.getElementById("navLinks");
+
+
+menuToggle.addEventListener("click", function () {
+
+    navLinks.classList.toggle("active");
+
+    const icon =
+        menuToggle.querySelector("i");
+
+
+    if (navLinks.classList.contains("active")) {
+
+        icon.classList.remove("fa-bars");
+
+        icon.classList.add("fa-xmark");
+
+    }
+
+    else {
+
+        icon.classList.remove("fa-xmark");
+
+        icon.classList.add("fa-bars");
+
+    }
+
+});
+
+
+/* =====================================================
+   CLOSE MENU AFTER CLICK
+===================================================== */
+
+navLinks.querySelectorAll("a").forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        navLinks.classList.remove("active");
+
+        const icon =
+            menuToggle.querySelector("i");
+
+        icon.classList.remove("fa-xmark");
+
+        icon.classList.add("fa-bars");
+
+    });
+
+});
+
+
+/* =====================================================
+   AIRPORT BOOKING → WHATSAPP
+===================================================== */
+
+const bookingForm =
+    document.getElementById("airportBookingForm");
+
+
+bookingForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+
+    const name =
+        document.getElementById("name").value.trim();
+
+
+    const phone =
+        document.getElementById("phone").value.trim();
+
+
+    const arrivalDate =
+        document.getElementById("arrivalDate").value;
+
+
+    const arrivalTime =
+        document.getElementById("arrivalTime").value;
+
+
+    const flight =
+        document.getElementById("flight").value.trim();
+
+
+    const passengers =
+        document.getElementById("passengers").value;
+
+
+    const destination =
+        document.getElementById("destination").value.trim();
+
+
+    const accommodation =
+        document.getElementById("accommodation").value;
+
+
+    const details =
+        document.getElementById("details").value.trim();
+
+
+    const message =
+
+`Hello Jerry Digital,
+
+I would like to request an airport pick-up.
+
+*Airport Pick-Up Request*
+
+Name: ${name}
+Phone: ${phone}
+Arrival Date: ${arrivalDate}
+Arrival Time: ${arrivalTime}
+Flight Number: ${flight || "Not provided"}
+Passengers: ${passengers}
+Destination / Hotel: ${destination}
+Accommodation Needed: ${accommodation}
+
+Additional Information:
+${details || "None"}
+
+Please let me know the available arrangements and price.
+
+Thank you.`;
+
+
+    const whatsappURL =
+
+        "https://wa.me/256763727742" +
+        encodeURIComponent(message);
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+});
+
+</script>
+
+
+</body>
+
+</html>
