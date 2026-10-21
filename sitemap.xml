@@ -1,16 +1,20 @@
 
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://ray36288.github.io/JERRY-DIGITAL-WEBSITE/</loc>
-  </url>
-  <url>
-    <loc>https://ray36288.github.io/JERRY-DIGITAL-WEBSITE/Services.html</loc>
-  </url>
-  <url>
-    <loc>https://ray36288.github.io/JERRY-DIGITAL-WEBSITE/Portfolio.html</loc>
-  </url>
-  <url>
-    <loc>https://ray36288.github.io/JERRY-DIGITAL-WEBSITE/Contact.html</loc>
-  </url>
+
+    <url>
+        <loc>https://ray36288.github.io/JERRY-DIGITAL-WEBSITE/</loc>
+    </url>
+
+    <url>
+        <loc>https://ray36288.github.io/JERRY-DIGITAL-WEBSITE/Services.html</loc>
+    </url>
+
+    <url>
+        <loc>https://ray36288.github.io/JERRY-DIGITAL-WEBSITE/Portfolio.html</loc>
+    </url>
+
+    <url>
+        <loc>https://ray36288.github.io/JERRY-DIGITAL-WEBSITE/Contact.html</loc>
+    </url>
+
 </urlset>
